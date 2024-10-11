@@ -16,7 +16,7 @@ resource "hcloud_ssh_key" "deployer" {
 resource "hcloud_server" "server" {
   name        = "${var.server_name}"
   image       = "ubuntu-24.04"
-  datacenter = "fsn1-dc8"
+  datacenter = "fsn1-dc14"
   server_type = "cx22"
   ssh_keys    = [hcloud_ssh_key.deployer.id]
   public_net {
