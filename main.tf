@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hetznercloud/hcloud"
+      version = "=1.48.1"
+    }
+  }
+}
+
 resource "hcloud_ssh_key" "deployer" {
   name   = "${var.server_name}-key"
   public_key = "${var.ssh_key}"
