@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    azurerm = {
+    hcloud = {
       source = "hetznercloud/hcloud"
       version = "=1.48.1"
     }
