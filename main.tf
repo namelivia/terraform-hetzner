@@ -17,7 +17,7 @@ resource "hcloud_server" "server" {
   name        = "${var.server_name}"
   image       = "ubuntu-24.04"
   datacenter = "fsn1-dc14"
-  server_type = "cx22"
+  server_type = "${var.server_type}"
   ssh_keys    = [hcloud_ssh_key.deployer.id]
   public_net {
     ipv4_enabled = true

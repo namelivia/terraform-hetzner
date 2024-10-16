@@ -7,3 +7,8 @@ variable "server_name" {
   type = string
   description = "Name for the server"
 }
+
+variable "server_type" {
+  type = string
+  description = "Type for the server"
+}
