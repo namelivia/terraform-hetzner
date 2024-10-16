@@ -1,8 +1,3 @@
-variable "ssh_key" {
-  type = string
-  description = "SSH Key to access the server"
-}
-
 variable "server_name" {
   type = string
   description = "Name for the server"
@@ -11,4 +6,9 @@ variable "server_name" {
 variable "server_type" {
   type = string
   description = "Type for the server"
+}
+
+variable "ssh_key_id" {
+  type = string
+  description = "ID of the SSH key"
 }
